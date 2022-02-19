@@ -132,3 +132,30 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.columQuienes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+input {
+  text-decoration-color: #753500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Belleza', sans-serif;
+  font-family: 'Poppins', sans-serif; }
+
+label {
+  text-decoration-color: #753500;
+  margin-top: 10px;
+  font-family: 'Belleza', sans-serif;
+  font-family: 'Poppins', sans-serif; }
+
+legend {
+  color: #753500;
+  font-family: 'Belleza', sans-serif;
+  font-family: 'Poppins', sans-serif; }
+
+.margenDerecho {
+  margin-right: 100px; }
