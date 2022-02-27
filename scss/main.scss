@@ -5,16 +5,19 @@
 html {
     font-family: 'Poppins', sans-serif;
 }
+//Fondo
 body {
     background: rgb(234,208,170);
     background: linear-gradient(0deg, rgba(234,208,170,1) 30%, rgba(255,255,255,1) 66%);
 }
+//Margenes de imagenes
 img {
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 10px;
     margin-right: 10px;
 }
+//Texto del Header
 .header { 
     font-family: 'Belleza', sans-serif;
     grid-area: header; 
@@ -24,43 +27,44 @@ img {
     justify-content: space-evenly;
     font-size: x-large
 }
-  
+//Clase main para Quienes somos y Contacto
   .main {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;    
 }
-  
-  .footer { grid-area: footer;
+//Organizacion del Footer
+  .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-  
-  .anuncio { 
-      grid-area: anuncio;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-}
-  
+//Barras Decorativas
   .barraGris {
       width: 1110px;
       height: 5px;
       background-color: #C4C4C4;
       margin-top: 15px-11px;
       margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
   }
   .barraRosa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 1110px;
     height: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: #A2641B
   }
+  //Titulo debajo del logo
   h1 {
     font-family: 'Belleza', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -71,6 +75,7 @@ img {
       align-items: center;
       justify-content: center;
   }
+  //Titulo grande h2
   h2 {
       color: #A2641B;
       font-size: xx-large;
@@ -81,21 +86,19 @@ img {
       align-items: center;
       justify-content: center;
   }
-.imgTexto {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
+//Decoracion de los links
 a {
     text-decoration:none;
     color:#753500;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 nav {
     font-size: medium;
     font-family: 'Belleza', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+//Decoracion del texto
 p {
     font-size: medium;
     color: #753500;
@@ -114,6 +117,7 @@ p {
     align-items: center;
     justify-content: center;
 }
+//Aumentar margenes
 .aumentarMargenes {
     display: flex;
     flex-direction: column;
@@ -122,6 +126,7 @@ p {
     margin-top: 70px;
     margin-bottom: 70px;
 }
+//imagenes inferiores
 .galeria {
     display: flex;
     flex-direction: row;
@@ -130,18 +135,21 @@ p {
     margin-left: 10px;
     margin-right: 10px;
 }
+//Texto debajo de cada imagen
 .colum {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+//Caracte. seccion quienes somos
 .columQuienes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+//Pisando Bootstrap
 input {
     text-decoration-color: #753500;
     margin-top: 10px; margin-bottom: 10px;
@@ -159,6 +167,49 @@ legend {
     font-family: 'Belleza', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+//Agregando margenes
 .margenDerecho {
     margin-right: 100px;
 }
+//Ubicacion texto debajo de las fotos index
+.textindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+// Dispositivo movil
+@media  (max-width: 991.98px) {
+    .barraGris {
+        width: 100%;
+        height: 5px;   
+    }
+    .barraRosa {
+        width: 100%;
+        height: 5px;   
+    }
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgPrincipal {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .logo {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+    }
+}
+  
+  

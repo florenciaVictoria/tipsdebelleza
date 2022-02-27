@@ -31,27 +31,27 @@ img {
   justify-content: space-between; }
 
 .footer {
-  grid-area: footer;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around; }
-
-.anuncio {
-  grid-area: anuncio;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
 
 .barraGris {
   width: 1110px;
   height: 5px;
   background-color: #C4C4C4;
   margin-top: 4px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .barraRosa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 1110px;
   height: 5px;
   margin-top: 15px;
@@ -78,15 +78,11 @@ h2 {
   align-items: center;
   justify-content: center; }
 
-.imgTexto {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
-
 a {
   text-decoration: none;
-  color: #753500; }
+  color: #753500;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 nav {
   font-size: medium;
@@ -159,3 +155,35 @@ legend {
 
 .margenDerecho {
   margin-right: 100px; }
+
+.textindex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+@media (max-width: 991.98px) {
+  .barraGris {
+    width: 100%;
+    height: 5px; }
+  .barraRosa {
+    width: 100%;
+    height: 5px; }
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .imgPrincipal {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .logo {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px; } }
